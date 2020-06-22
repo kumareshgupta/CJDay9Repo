@@ -4,7 +4,10 @@ package com.manipal.demo.day9;
 public class Employee   {
 	private String empName;
 	private double salary;
-	
+
+	public Employee() {
+		System.out.println("Default constructor....");
+	}
 	public Employee(String empName, double salary) {
 		super();
 		this.empName = empName;
@@ -27,7 +30,7 @@ public class Employee   {
 	
 	@Override
 	public String toString() {
-		return  empName + " - " + salary;
+		return  "Employee Details : \n"+ empName + " - " + salary;
 	}
 	
 }
